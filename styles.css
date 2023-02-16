@@ -1,0 +1,82 @@
+h1{
+    text-align: center;
+}
+#counter{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+}
+#money{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+}
+ul{
+    justify-items: center;
+    margin: auto;
+    text-align:center;
+}
+
+.test{
+    display:inline-block;
+    margin: auto;
+}
+
+#deltaCookie{
+    color:white;
+}
+#deltaMoney{
+    color:white;
+}
+
+.cookie{
+    height: 25%;
+    width: 25%;
+    display:block;
+    justify-items: center;
+    margin: auto;
+}
+
+button{
+    height: 75px;
+    position: relative;
+    border: none;
+    border-radius:50px;
+    background-color: rgb(145, 145, 132);
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+.container{
+    width: 300px;  
+    height: 100px;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    margin:auto;
+}
+
+button:hover{
+    background-color: yellow;
+}
+
+li{
+    list-style:none;
+}
+.cookie:active{
+    transform: translateY(0.5em);
+}
+.buttonOn{
+    background-color:green;
+}
+.buttonOff{
+    background-color:red;
+}
+
+.moneyPlus{
+    color:green;
+}
+
+.moneyMinus{
+    color: red;
+}
