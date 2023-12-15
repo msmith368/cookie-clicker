@@ -18,8 +18,13 @@ ul{
 }
 
 .test{
-    display:inline-block;
+    position: relative;
+    width: fit-content;
     margin: auto;
+    text-align: center;
+    display: inline-block;
+    width: 20rem;
+    left: 9rem;
 }
 
 #deltaCookie{
@@ -57,7 +62,7 @@ button{
 }
 
 button:hover{
-    background-color: yellow;
+    background-color: yellow !important;
 }
 
 li{
@@ -79,4 +84,22 @@ li{
 
 .moneyMinus{
     color: red;
+}
+
+#resetButton{
+    position:relative;
+    left: 35rem;
+    height: 40px;
+    width: 70px;
+    background-color: red;
+    top: 1rem;
+}
+
+#resetButton:hover{
+    background-color: darkred !important;
+}
+
+#bakery {
+    position: relative;
+    left: 2rem;
 }
