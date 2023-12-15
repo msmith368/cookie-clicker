@@ -29,6 +29,7 @@ document.getElementById("bakery").onclick = function(){
         document.getElementById("money").innerHTML = "$" + money;
         document.getElementById("bakery").innerHTML = "Bakery On";
         document.getElementById("bakery").classList.toggle("buttonOn");
+        document.getElementById("bakery").style.backgroundColor = "green";
         document.getElementById("deltaMoney").style.color = "red";
         document.getElementById("deltaMoney").innerHTML = "-$500";
     }
@@ -37,11 +38,13 @@ document.getElementById("bakery").onclick = function(){
             document.getElementById("bakery").innerHTML = "Bakery Off";
             document.getElementById("bakery").classList.toggle("buttonOff");
             document.getElementById("bakery").classList.toggle("buttonOn");
+            document.getElementById("bakery").style.backgroundColor = "red";
             bakeryStatus = false;
         }else{
             document.getElementById("bakery").innerHTML = "Bakery On";
             document.getElementById("bakery").classList.toggle("buttonOn");
             document.getElementById("bakery").classList.toggle("buttonOff");
+            document.getElementById("bakery").style.backgroundColor = "green";
             bakeryStatus = true;
         }
     }
@@ -62,3 +65,14 @@ setInterval(function() {
         , 500);
     }
 }, 1000);
+
+document.getElementById("resetButton").onclick = function() {
+    count = 0;
+    money = 0;
+    bakeryBought = false;
+    bakeryStatus = false;
+    document.getElementById("counter").innerHTML = count;
+    document.getElementById("money").innerHTML = "$" + money;
+    document.getElementById("bakery").innerHTML = "Buy Bakery ($500)";
+    document.getElementById("bakery").style.backgroundColor = "rgb(145, 145, 132)";
+}
